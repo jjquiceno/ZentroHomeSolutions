@@ -8,10 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/home.css">
-  <link rel="icon" href="/img/logos/logo2.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="/public_html/css/home.css">
+  <link rel="icon" href="/public_html/img/logos/logobac.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/public_html/css/index.css">
+  <!-- UIcons from Flaticon -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css">
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css">
@@ -22,7 +23,7 @@
   <header class="topbar">
     <div class="container topbar-inner">
       <div class="brand">
-        <img src="/img/logos/logobac.png" alt="logo" class="logo" aria-hidden="true">
+        <img src="/public_html/img/logos/logobac.png" alt="logo" class="logo" aria-hidden="true">
         <div>
           <div style="font-weight:800; letter-spacing:.3px">Zentro Home Solutions</div>
           <div class="lang"><span class="none">Se habla Español · </span>Serving Greater Orlando & Tampa</div>
@@ -31,10 +32,10 @@
       <div>
         <div class="menu-ordenador none">
           <nav>
-            <a href="/index.html" class="ordenador-link positionOrd">Home</a>
-            <a href="/templates/about.html" class="ordenador-link optionOrd">About</a>
-            <a href="/templates/contact.html" class="ordenador-link optionOrd">Contact</a>
-            <a href="/templates/blog.html" class="ordenador-link optionOrd">Blog</a>
+            <a href="/public_html/index.html" class="ordenador-link positionOrd">Home</a>
+            <a href="/public_html/templates/about.html" class="ordenador-link optionOrd">About</a>
+            <a href="/public_html/templates/contact.html" class="ordenador-link optionOrd">Contact</a>
+            <a href="/public_html/templates/blog.html" class="ordenador-link optionOrd">Blog</a>
           </nav>
         </div>
         <i class="menuToggle fa-solid fa-bars fa-2x"></i>
@@ -50,20 +51,20 @@
         <div class="menuOptions">
           <nav>
             <ul>
-              <li class="position"><a class="x4 menuLink" href="/index.html">Home</a></li>
-              <li class="option"><a class="x4 menuLink" href="/templates/about.html">About</a></li>
-              <li class="option"><a class="x4 menuLink" href="/templates/contact.html">Contact</a></li>
-              <li class="option"><a class="x4 menuLink" href="/templates/blog.html">Blog</a></li>
+              <li class="position"><a class="x4 menuLink" href="/public_html/index.html">Home</a></li>
+              <li class="option"><a class="x4 menuLink" href="/public_html/templates/about.html">About</a></li>
+              <li class="option"><a class="x4 menuLink" href="/public_html/templates/contact.html">Contact</a></li>
+              <li class="option"><a class="x4 menuLink" href="/public_html/templates/blog.html">Blog</a></li>
             </ul>
           </nav>
         </div>
         <div class="menuFooter">
-        
+  
         </div>
       </div>
     </div>
   </div>
-  <script src="/js/menu.js"></script>
+  <script src="/public_html/js/menu.js"></script>
 
   <div class="hero-features">
     <section class="hero">
@@ -81,7 +82,7 @@
         </div>
         <div class="lead-card" id="lead" data-aos="fade-down" data-aos-duration="700">
           <h3>Request your cash offer</h3>
-          <form name="zentro-lead">
+          <form name="zentro-lead" method="POST">
             <div>
               <label for="name">Full Name</label>
               <input id="name" name="name" required />
@@ -101,21 +102,21 @@
             <div>
               <label for="timeline">When do you want to sell?</label>
               <select id="timeline" name="timeline">
-                <option value="asap (7–14 days)">ASAP (7–14 days)</option>
-                <option value="2–4 weeks">2–4 weeks</option>
-                <option value="1–3 months">1–3 months</option>
-                <option value="Just exploring">Just exploring</option>
+                <option value="asap">ASAP (7–14 days)</option>
+                <option>2–4 weeks</option>
+                <option>1–3 months</option>
+                <option>Just exploring</option>
               </select>
             </div>
             <div>
               <label for="situation">Situation (optional)</label>
               <select id="situation" name="situation">
-                <option value="Pre‑Foreclosure">Pre‑Foreclosure</option>
-                <option value="Divorce">Divorce</option>
-                <option value="Inherited/Probate">Inherited/Probate</option>
-                <option value="Tired Landlord">Tired Landlord</option>
-                <option value="Relocation">Relocation</option>
-                <option value="Other">Other</option>
+                <option>Pre‑Foreclosure</option>
+                <option>Divorce</option>
+                <option>Inherited/Probate</option>
+                <option>Tired Landlord</option>
+                <option>Relocation</option>
+                <option>Other</option>
               </select>
             </div>
             <div class="full">
@@ -123,7 +124,7 @@
               <div class="disclaimer">By submitting, you agree to be contacted about your offer. No obligation. We typically reply within <strong>24–48 hours</strong>.</div>
             </div>
           </form>
-          <script src="/js/form.js"></script>
+          <script src="/public_html/js/form.js"></script>
         </div>
       </div>
     </section>
@@ -144,6 +145,7 @@
   <div class="containerD" >
     <div class="diagonales-box">
       <div class="d-b-c" style="border: solid white;">
+        <!-- <span class="kicker">WHY ZENTRO?</span> -->
         <h3 class="section-title kicker kickerD" data-aos="fade-right" data-aos-duration="700">WHY ZENTRO?</h3>
         <div class="grid">
           <div class="card" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100"><h4>Local & Transparent</h4><p>We’re a Florida‑based team—no bait‑and‑switch. We walk you through every step, clearly.</p></div>
@@ -162,6 +164,7 @@
               <div class="deploy-item-toggle">
                 <div class="deploy-item-text">
                   <h4>Do I pay any fees or commissions?</h4>
+                  <!-- <p>No. We pay standard closing costs and charge no seller fees. You keep more of your money.</p> -->
                 </div>
                 <div class="deploy-item-icon">
                   <i class="fa-solid fa-angle-down"></i>
@@ -175,6 +178,7 @@
               <div class="deploy-item-toggle">
                 <div class="deploy-item-text">
                   <h4>Will you buy my house as‑is?</h4>
+                  <!-- <p>No. We pay standard closing costs and charge no seller fees. You keep more of your money.</p> -->
                 </div>
                 <div class="deploy-item-icon">
                   <i class="fa-solid fa-angle-down"></i>
@@ -190,6 +194,7 @@
               <div class="deploy-item-toggle">
                 <div class="deploy-item-text">
                   <h4>How fast can we close?</h4>
+                  <!-- <p>No. We pay standard closing costs and charge no seller fees. You keep more of your money.</p> -->
                 </div>
                 <div class="deploy-item-icon">
                   <i class="fa-solid fa-angle-down"></i>
@@ -199,11 +204,58 @@
                 <p>Many sellers choose 7–14 days, but we can align with your timeline.</p>
               </div>
             </div>
+            <!-- <div class="deploy-item" data-deploy="1" data-aos="fade-down" data-aos-duration="700" data-aos-delay="200">
+              <div class="deploy-item-toggle">
+                <div class="deploy-item-text">
+                  <h4>Do I pay any fees or commissions?</h4>
+                </div>
+                <div class="deploy-item-icon">
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="deploy-item-content" data-deploy="1">
+                <p>No. We pay standard closing costs and charge no seller fees. You keep more of your money.</p>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
     </section>
   </div>
+
+  <!-- <section>
+    <div class="container">
+      <h3 class="section-title">Articles & Guides</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Selling Your Home: Who Pays What? (All Seller & Commission Fees)</h4>
+          <p>Understand traditional commissions, closing costs, and how cash sales compare.</p>
+          <a class="btn secondary" href="templates/selling.html">Read Guide</a>
+        </article>
+        <article class="card">
+          <h4>Avoiding Foreclosure in Florida</h4>
+          <p>Practical steps, timelines, and options to protect your equity and credit.</p>
+          <a class="btn secondary" href="templates/foreclosure.html">Read Guide</a>
+        </article>
+        <article class="card">
+          <h4>Inherited Property: Sell As‑Is</h4>
+          <p>What to do about repairs, liens, and multiple heirs—simplified.</p>
+          <a class="btn secondary" href="templates/inherited.html">Read Guide</a>
+        </article>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section>
+    <div class="container">
+      <h3 class="section-title">How It Works</h3>
+      <div class="how-steps">
+        <div class="step"><div class="num">1</div><h4>Chat</h4><p>Tell us about the property and your goals. Quick call or form submission—your choice.</p></div>
+        <div class="step"><div class="num">2</div><h4>Get Offer</h4><p>Receive your fair, no‑obligation cash offer in <strong>24–48 hours</strong>.</p></div>
+        <div class="step"><div class="num">3</div><h4>Close</h4><p>Pick your date and close in as little as <strong>7–14 days</strong>. Get paid and move forward.</p></div>
+      </div>
+    </div>
+  </section> -->
 
   <footer class="footer">
     <div class="container">
@@ -222,7 +274,7 @@
   </footer>
 
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-  <script src="/js/faq.js"></script>
+  <script src="/public_html/js/faq.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>AOS.init()</script>
 </body>

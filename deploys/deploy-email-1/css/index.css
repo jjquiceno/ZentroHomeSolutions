@@ -1,0 +1,326 @@
+/* ------------------- HERO - FEATURES ------------------- */
+.hero-features{
+    background-image: url('../img/casa2.jpg');
+    background-attachment: fixed;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ------------------- HERO ------------------- */
+.hero{
+    position:relative; 
+    isolation:isolate; 
+    min-height:86vh;
+    padding-top: 10%;
+    height: 100vh;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    z-index: -1;
+}
+.hero-inner{
+    display:grid; 
+    grid-template-columns:1.2fr .9fr; 
+    gap: 3rem; 
+    align-items:center;    
+    padding: 1rem 1rem 1rem 3rem;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(180deg, #013252b6, #0132528e);
+    box-shadow: var(--shadow);
+}
+.kicker{
+    display:inline-flex; 
+    gap:.6rem; 
+    align-items:center; 
+    font-weight:800; 
+    color:#0f131c; 
+    background:#e3b341; 
+    border-radius:999px; 
+    padding:.35rem .7rem;
+}
+.hero h1{
+    margin:.5rem 0 .25rem; 
+    font-size:clamp(1.9rem,4vw,3rem); 
+    color:var(--gold)
+}
+.hero p{
+    color:var(--muted); 
+    font-size:1.05rem
+}
+.badges{
+    margin-top:1rem; 
+    display:flex; 
+    flex-wrap:wrap; 
+    gap:.6rem
+}
+.badge{
+    background:rgba(122,162,198,.14); 
+    border:1px solid rgba(122,162,198,.3); 
+    padding:.45rem .65rem; 
+    border-radius:999px; 
+    font-weight:700; 
+    font-size:.92rem
+}
+
+/* Lead form */
+.lead-card{
+    background:#ffffff; 
+    color:#0c111a; 
+    border:1px solid rgba(122,162,198,.4); 
+    border-radius:var(--radius); 
+    padding:1.1rem; 
+    box-shadow:var(--shadow)
+}
+.lead-card h3{
+    margin:0 0 .6rem; 
+    font-size:1.15rem; 
+    color:#0c111a
+}
+form{
+    display:grid; 
+    grid-template-columns:1fr 1fr; 
+    gap:.6rem;
+}
+form .full{
+    grid-column:1/-1;
+}
+input, select, textarea{
+    width:100%; 
+    padding:.7rem .8rem; 
+    border-radius:12px; 
+    border:1px solid rgba(122,162,198,.5); 
+    background:#ffffff; 
+    color:#0c111a
+}
+label{
+    font-size:.85rem; 
+    color:#213245
+}
+.disclaimer{
+    font-size:.78rem; 
+    color:#4a5d70; 
+    margin-top:.35rem
+}
+
+/* ------------------- FEATURES ------------------- */
+.features{
+    border-radius: 40px 40px 0 0;
+    /* background:#0b1a51da;  */
+    background:#013252ea; 
+    backdrop-filter:saturate(120%) blur(20px); 
+    padding-bottom: 5rem;
+}
+.features-texts{
+    margin-left: 1rem;
+    text-align: left;
+    width: 70%;
+}
+.iconH{
+    font-size: 15rem;
+    color: var(--gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+}
+.features .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ------------------- DIAGONALES ------------------- */
+.diagonales-box{
+    background: white;
+    z-index: 50;
+    height: fit-content;
+    padding: .5rem 3.5rem;
+}
+.containerD::before {
+    content: "";
+    position: absolute;
+    top: 34vh; 
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: white;
+    transform: skewY(-2deg);
+    transform-origin: top left;
+    z-index: 50;
+}
+.containerD::after {
+    content: "";
+    position: absolute;
+    top: -4%; 
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: white;
+    transform: skewY(1deg);
+    transform-origin: top left;
+    z-index: 50;
+}
+.d-b-c{
+    padding: 0;
+}
+.kickerD{
+    color: #013252;
+    border-radius: 0 999px 999px 0;
+    margin-left: -3.7rem;
+    width: 27%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1.2rem;
+}
+
+
+/* ------------------- FAQ ------------------- */
+.faq-box{
+    /* border: solid white; */
+    position: relative;
+    padding-top: 6.5rem;
+    backdrop-filter: blur(20px);
+}
+.faq-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/casa2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .7;
+}
+.faq-item{
+    border:1px solid var(--border); 
+    border-radius:12px; 
+    padding:1rem; 
+    background:#0e141f;
+}
+.faq-deploy-list{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    background:#013252e8; 
+    /* background:#1d436f85;  */
+    backdrop-filter:saturate(120%) blur(20px); 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    border:1px solid var(--border); 
+    border-radius:var(--radius); 
+    padding:1rem; 
+    box-shadow:var(--shadow)
+}
+.faq-deploy-list-inner{
+    width: 49%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* border: solid black; */
+}
+.deploy-item{
+    border-radius:12px; 
+    background:#1d436f;
+    min-height: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s ease ;
+    position: relative;
+    height: fit-content;
+}
+
+.deploy-item-toggle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid var(--border); 
+    width: 100%;
+    border-radius: 12px;
+    padding: 0 1.5rem;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.deploy-item-toggle:hover{
+    background-color: #121a24ef;
+}
+.deploy-item-content{
+    /* display: none; */
+    width: 100%;
+    height: 0;
+    padding: 0 1.5rem;
+    border-radius: 12px;
+    transition: .3s ease;
+    overflow: hidden;
+}
+.deploy-item-content.active{
+    height: 15vh;
+}
+i{
+    transition: .3s ease;
+}
+i.up{
+    transform: rotate(180deg);
+}
+@media (max-width: 640px){
+    .hero{
+        height: fit-content;
+    }
+    .hero::before{
+        display: none;
+    }
+    .hero-inner{
+        margin-top: 8vh;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .features > .container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .features{
+        border-radius: 0;
+    }
+    .iconH{
+        margin-left: 0;
+    }
+    .features-texts{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .diagonales-box{
+        padding: 2rem 0;
+    }
+    .containerD::after {
+        top: -2%;
+    }
+    .kickerD{
+        margin-left: -3.7rem;
+        width: fit-content;
+        padding-left: 4.5rem;
+    }
+
+    .faq-deploy-list-inner{
+        width: 100%;
+    }
+}

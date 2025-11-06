@@ -1,0 +1,73 @@
+/* variables */
+:root{
+    --gold:#e3b341;            /* gold accents */
+    --steel:#7aa2c6;           /* steel blue accents */
+    --dark:#0c111a;            /* page background */
+    --card:#121a24;            /* dark card */
+    --text:#ecf2f8;            /* primary text */
+    --muted:#b8c7da;           /* muted text */
+    --border:rgba(255,255,255,.12);
+    --radius:18px;
+    --shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+/* configuraciones generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+::-webkit-scrollbar{
+    width: 5px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    width: 10px;
+    border-radius: 10px;
+    background-color:  var(--steel);
+    padding: 2px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: var(--card);
+    
+}
+::-webkit-scrollbar-thumb:hover{
+    cursor: pointer;
+    background-color: var(--muted);
+}
+body{
+    margin:0; 
+    font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    color:var(--text); 
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased; 
+    text-rendering:optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/* estilos del header */
+header.header{
+    /* border: solid black; */
+    width: 100vw;
+    height: 12vh;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 2px 5px #7aa2c6;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+}
+.logo{
+    width:44px; 
+    height:44px; 
+    border-radius:12px; 
+    background:linear-gradient(135deg,#0f1a28,#1b2a3d); 
+    border:1px solid var(--border); 
+    display:grid; 
+    place-items:center; 
+    font-weight:900; 
+    color:var(--gold)
+}
+
+
+/* estilos del responsive */

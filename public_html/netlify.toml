@@ -1,0 +1,12 @@
+# Disable Netlify Forms processing to prevent default modal interception
+[build]
+  publish = "."
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.forms]
+  enabled = false
+
+# (Optional) Also ensure no form submissions are handled server-side by Netlify
+# You can still use client-side JS (EmailJS) as implemented in /js/form.js

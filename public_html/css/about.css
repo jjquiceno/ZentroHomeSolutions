@@ -1,0 +1,208 @@
+/* ------------------- ABOUT ------------------- */
+.hero-about-container{
+    background-image: url('../img/forsale.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.noneOrd{
+    display: none;
+}
+.hero{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 2rem;
+}
+.hero-texts{
+    width: 70%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(180deg, #0b1a5183, #0b1a5170);
+    box-shadow: var(--shadow);
+}
+.hero h1{
+    margin:.5rem 0 .25rem; 
+    font-size:clamp(1.9rem,4vw,3rem); 
+    color:var(--gold)
+}
+.about-container{
+    height: 80vh;
+    background-color: white;
+    border-radius: 40px 40px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards-container{
+    height: 80%;
+    width: 90%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-card{
+    border-radius: var(--radius); 
+    /* background-color: #0b1a51; */
+    background-color: #013252;
+    height: 100%;
+    width: 25% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    gap: 2rem;
+}
+.card-img{
+    width: 80%;
+    text-align: center;
+}
+.iconoA{
+    font-size: 8rem;
+    color: var(--gold);
+}
+.card-texts{
+    width: 80%;
+    height: 50%;
+    /* padding: 1rem; */
+}
+.card-texts h2, .card-texts p{
+    color: white;
+    text-align: center;
+}
+.card-texts h2{
+    line-height: 1;     /* reduce el espacio vertical entre líneas */
+}
+
+.hiw{
+    /* border: solid yellow; */
+    height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hiw::after{
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: white;
+    transform: skewY(-2deg);
+    transform-origin: top left;
+    z-index: 50;
+}
+.hiw::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.705);
+}
+.hiw-texts{
+    color: var(--gold);
+    font-size: 1.5rem;
+    width: 90%;
+    margin: auto;
+}
+.steps-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.step{
+    width: 30%;
+    height: fit-content;
+    /* background:#0b1a51be;  */
+    background:white; 
+    backdrop-filter: blur(20px);
+    border:1px solid var(--border); 
+    border-radius:var(--radius); 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+}
+.step .num{
+    width: fit-content;
+    display: block;          /* control de altura más predecible */
+    font-size: 5rem;
+    line-height: 1;          /* elimina el extra de la fuente arriba/abajo */
+    font-weight: 900;
+    color: var(--steel);
+    opacity: .3;
+    text-align: left;
+    height: 1em;             /* altura exacta igual al tamaño del texto */
+    margin: 0;               /* sin márgenes extra */
+}
+.step p{
+    width: 100%;
+}
+.steps-box p, .step-title{
+    margin: 0;
+}
+.step-title{
+    font-weight: bold;
+    color: var(--gold);
+    font-size: 1.5rem;
+}  
+
+/* responsive */
+@media (max-width: 640px){
+    .hero{
+        height: 50vh;
+        height: 25vh;
+    }
+    .about-container{
+        border-radius: 0;
+        height: fit-content;
+        padding: 2rem 0;
+    }
+    .cards-container{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .about-card{
+        width: 100%;
+    }
+
+    .hiw{
+        height: fit-content;
+        padding: 4rem 0;
+    }
+    .steps-box{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .step{
+        width: 100%;
+    }
+    .none{
+        display: none;
+    }
+    .noneOrd{
+        display: block;
+    }
+}
+@media (max-width: 420px){
+   
+}
